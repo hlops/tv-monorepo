@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TvGuideManager importPlayList() can successfully import channels 1`] = `
+Array [
+  "guide/CBS Affiliate",
+  "guide/PBS Affiliate",
+]
+`;
+
+exports[`TvGuideManager importPlayList() can successfully import channels 2`] = `
+Array [
+  Object {
+    "categories": Array [
+      "Talk",
+      "News",
+      "Series",
+    ],
+    "desc": "Republican candidate John McCain; premiere of the film \\"The Dark Knight.\\"",
+    "start": 2008-07-15T12:00:00.000Z,
+    "stop": 2008-07-15T14:00:00.000Z,
+    "title": "The Early Show",
+  },
+  Object {
+    "categories": Array [
+      "Talk",
+      "Series",
+    ],
+    "desc": "Actresses Kim Raver, Brooke Shields and Lindsay Price (\\"Lipstick Jungle\\"); women in their 40s tell why they got breast implants; a 30-minute meal.",
+    "start": 2008-07-15T14:00:00.000Z,
+    "stop": 2008-07-15T15:00:00.000Z,
+    "title": "Rachael Ray",
+  },
+  Object {
+    "categories": Array [
+      "Game show",
+      "Series",
+    ],
+    "desc": "Contestants bid for prizes then compete for fabulous showcases.",
+    "start": 2008-07-15T15:00:00.000Z,
+    "stop": 2008-07-15T16:00:00.000Z,
+    "title": "The Price Is Right",
+  },
+  Object {
+    "categories": Array [
+      "Game show",
+      "Series",
+    ],
+    "desc": undefined,
+    "start": 2008-07-15T16:00:00.000Z,
+    "stop": 2008-07-15T16:30:00.000Z,
+    "title": "Jeopardy!",
+  },
+  Object {
+    "categories": Array [
+      "Soap",
+      "Series",
+    ],
+    "desc": "Jeff thinks Kyon stole the face cream; Nikki asks Nick to give David a chance; Amber begs Adrian to go to Australia.",
+    "start": 2008-07-15T16:30:00.000Z,
+    "stop": 2008-07-15T17:30:00.000Z,
+    "title": "The Young and the Restless",
+  },
+]
+`;

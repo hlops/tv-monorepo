@@ -1,0 +1,881 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`M3uParser parse() can parse m3u playlist from resources 1`] = `
+Array [
+  Object {
+    "options": Object {
+      "group-title": "Познавательный",
+    },
+    "title": " 365 Дней",
+    "url": "http://192.168.1.1:4000/udp/239.1.5.20:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Познавательный",
+    },
+    "title": " Amazing Life",
+    "url": "http://192.168.1.1:4000/udp/239.1.5.19:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Познавательный",
+    },
+    "title": " Da Vinci",
+    "url": "http://192.168.1.1:4000/udp/239.1.5.6:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Познавательный",
+    },
+    "title": " Nat Geo Wild",
+    "url": "http://192.168.1.1:4000/udp/239.1.5.16:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Познавательный",
+    },
+    "title": " National Geographic",
+    "url": "http://192.168.1.1:4000/udp/239.1.5.8:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Познавательный",
+    },
+    "title": " Russian Travel Guide",
+    "url": "http://192.168.1.1:4000/udp/239.1.5.13:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Познавательный",
+    },
+    "title": " Travel Adventure",
+    "url": "http://192.168.1.1:4000/udp/239.1.5.7:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Познавательный",
+    },
+    "title": " ВРЕМЯ",
+    "url": "http://192.168.1.1:4000/udp/239.1.5.4:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Познавательный",
+    },
+    "title": " Живая планета",
+    "url": "http://192.168.1.1:4000/udp/239.1.5.23:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Познавательный",
+    },
+    "title": " История",
+    "url": "http://192.168.1.1:4000/udp/239.1.5.21:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Познавательный",
+    },
+    "title": " Мир увлечений (тест)",
+    "url": "http://192.168.1.1:4000/udp/239.1.5.22:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Познавательный",
+    },
+    "title": " Моя планета",
+    "url": "http://192.168.1.1:4000/udp/239.1.5.17:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Познавательный",
+    },
+    "title": " Мужское Кино (тест)",
+    "url": "http://192.168.1.1:4000/udp/239.1.5.12:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Познавательный",
+    },
+    "title": " Наука 2.0",
+    "url": "http://192.168.1.1:4000/udp/239.1.5.18:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Познавательный",
+    },
+    "title": " Первый образовательный",
+    "url": "http://192.168.1.1:4000/udp/239.1.5.11:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Познавательный",
+    },
+    "title": " Техно-24",
+    "url": "http://192.168.1.1:4000/udp/239.1.5.10:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Детям",
+    },
+    "title": " Cartoon Network",
+    "url": "http://192.168.1.1:4000/udp/239.1.3.3:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Детям",
+    },
+    "title": " Fashion TV",
+    "url": "http://192.168.1.1:4000/udp/239.1.3.13:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Детям",
+    },
+    "title": " Fox Life",
+    "url": "http://192.168.1.1:4000/udp/239.1.3.11:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Детям",
+    },
+    "title": " Jim Jam",
+    "url": "http://192.168.1.1:4000/udp/239.1.3.2:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Детям",
+    },
+    "title": " Nickelodeon",
+    "url": "http://192.168.1.1:4000/udp/239.1.3.4:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Детям",
+    },
+    "title": " TiJi",
+    "url": "http://192.168.1.1:4000/udp/239.1.3.6:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Детям",
+    },
+    "title": " Детский",
+    "url": "http://192.168.1.1:4000/udp/239.1.3.5:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Детям",
+    },
+    "title": " Детский мир",
+    "url": "http://192.168.1.1:4000/udp/239.1.3.7:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Детям",
+    },
+    "title": " Индия ТВ",
+    "url": "http://192.168.1.1:4000/udp/239.1.3.15:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Детям",
+    },
+    "title": " Мама",
+    "url": "http://192.168.1.1:4000/udp/239.1.3.14:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Детям",
+    },
+    "title": " МУЛЬТ",
+    "url": "http://192.168.1.1:4000/udp/239.1.3.1:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Детям",
+    },
+    "title": " Русский роман",
+    "url": "http://192.168.1.1:4000/udp/239.1.3.17:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Детям",
+    },
+    "title": " СТС love",
+    "url": "http://192.168.1.1:4000/udp/239.1.3.8:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " 49 КАНАЛ",
+    "url": "http://192.168.1.1:4000/udp/239.1.10.8:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " 8 канал",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.21:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " Disney Channel",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.12:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " Домашний",
+    "url": "http://192.168.1.1:4000/udp/239.1.10.5:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " Звезда",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.9:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " Карусель",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.11:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " Матч ТВ",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.16:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " Мир",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.31:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " Муз ТВ",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.13:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " НТВ",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.4:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " ОТР",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.8:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " ОТС",
+    "url": "http://192.168.1.1:4000/udp/239.1.10.6:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " Первый",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.1:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " Пятница",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.17:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " Пятый",
+    "url": "http://192.168.1.1:4000/udp/239.1.10.3:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " РЕН-ТВ",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.5:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " Россия 1",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.2:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " Россия 24",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.3:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " Россия К",
+    "url": "http://192.168.1.1:4000/udp/239.1.10.7:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " Союз",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.19:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " СПАС",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.22:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " СТС",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.6:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " ТВ-3",
+    "url": "http://192.168.1.1:4000/udp/239.1.10.4:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " ТВЦ",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.10:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " ТНТ",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.7:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " Че",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.14:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Эфир",
+    },
+    "title": " ЮТВ",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.18:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Музыка",
+    },
+    "title": " A-One",
+    "url": "http://192.168.1.1:4000/udp/239.1.8.2:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Музыка",
+    },
+    "title": " Bridge TV",
+    "url": "http://192.168.1.1:4000/udp/239.1.8.8:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Музыка",
+    },
+    "title": " Europa Plus TV",
+    "url": "http://192.168.1.1:4000/udp/239.1.8.10:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Музыка",
+    },
+    "title": " Mezzo",
+    "url": "http://192.168.1.1:4000/udp/239.1.8.11:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Музыка",
+    },
+    "title": " MTV Dance (тест)",
+    "url": "http://192.168.1.1:4000/udp/239.1.8.15:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Музыка",
+    },
+    "title": " Music Box RU",
+    "url": "http://192.168.1.1:4000/udp/239.1.8.5:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Музыка",
+    },
+    "title": " Music Box TV",
+    "url": "http://192.168.1.1:4000/udp/239.1.8.6:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Музыка",
+    },
+    "title": " RU.TV",
+    "url": "http://192.168.1.1:4000/udp/239.1.8.4:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Музыка",
+    },
+    "title": " Rusong TV",
+    "url": "http://192.168.1.1:4000/udp/239.1.8.14:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Музыка",
+    },
+    "title": " VH1 Classic (тест)",
+    "url": "http://192.168.1.1:4000/udp/239.1.8.7:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Музыка",
+    },
+    "title": " VH1 European",
+    "url": "http://192.168.1.1:4000/udp/239.1.8.16:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Музыка",
+    },
+    "title": " Ля-минор",
+    "url": "http://192.168.1.1:4000/udp/239.1.8.13:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Музыка",
+    },
+    "title": " ТНТ MUSIC",
+    "url": "http://192.168.1.1:4000/udp/239.1.8.2:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Музыка",
+    },
+    "title": " Шансон ТВ",
+    "url": "http://192.168.1.1:4000/udp/239.1.8.12:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Кино",
+    },
+    "title": " Amedia1",
+    "url": "http://192.168.1.1:4000/udp/239.1.4.4:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Кино",
+    },
+    "title": " Fox",
+    "url": "http://192.168.1.1:4000/udp/239.1.4.5:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Кино",
+    },
+    "title": " Sony Sci-Fi",
+    "url": "http://192.168.1.1:4000/udp/239.1.4.7:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Кино",
+    },
+    "title": " SONY TВ",
+    "url": "http://192.168.1.1:4000/udp/239.1.4.6:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Кино",
+    },
+    "title": " TVXXI",
+    "url": "http://192.168.1.1:4000/udp/239.1.4.1:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Кино",
+    },
+    "title": " Дом кино",
+    "url": "http://192.168.1.1:4000/udp/239.1.4.8:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Кино",
+    },
+    "title": " Комедия ТВ",
+    "url": "http://192.168.1.1:4000/udp/239.1.4.3:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Кино",
+    },
+    "title": " Настоящее страшное Телевидение",
+    "url": "http://192.168.1.1:4000/udp/239.1.4.15:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Кино",
+    },
+    "title": " Русский бестселлер",
+    "url": "http://192.168.1.1:4000/udp/239.1.4.2:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Кино",
+    },
+    "title": " Русский детектив",
+    "url": "http://192.168.1.1:4000/udp/239.1.4.16:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Кино",
+    },
+    "title": " Русский иллюзион",
+    "url": "http://192.168.1.1:4000/udp/239.1.4.11:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "HD",
+    },
+    "title": " Eurosport 1 HD",
+    "url": "http://192.168.1.1:4000/udp/239.1.11.6:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "HD",
+    },
+    "title": " Fox Life HD",
+    "url": "http://192.168.1.1:4000/udp/239.1.9.3:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "HD",
+    },
+    "title": " HD Life",
+    "url": "http://192.168.1.1:4000/udp/239.1.9.2:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "HD",
+    },
+    "title": " Mezzo Live HD",
+    "url": "http://192.168.1.1:4000/udp/239.1.10.1:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "HD",
+    },
+    "title": " Myzen HD",
+    "url": "http://192.168.1.1:4000/udp/239.1.10.21:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "HD",
+    },
+    "title": " Russia Today Doc HD",
+    "url": "http://192.168.1.1:4000/udp/239.1.9.5:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "HD",
+    },
+    "title": " Russia Today HD",
+    "url": "http://192.168.1.1:4000/udp/239.1.9.4:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "HD",
+    },
+    "title": " Матч HD (тест)",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.23:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "HD",
+    },
+    "title": " Нашествие",
+    "url": "http://192.168.1.1:4000/udp/239.1.10.23:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "HD",
+    },
+    "title": " Первый HD",
+    "url": "http://192.168.1.1:4000/udp/239.1.15.20:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "HD",
+    },
+    "title": " Первый музыкальный HD",
+    "url": "http://192.168.1.1:4000/udp/239.1.9.6:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "HD",
+    },
+    "title": " Россия HD",
+    "url": "http://192.168.1.1:4000/udp/239.1.10.22:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Спорт",
+    },
+    "title": " Eurosport 1",
+    "url": "http://192.168.1.1:4000/udp/239.1.12.3:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Спорт",
+    },
+    "title": " Eurosport 2",
+    "url": "http://192.168.1.1:4000/udp/239.1.12.4:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Спорт",
+    },
+    "title": " Extreme Sports",
+    "url": "http://192.168.1.1:4000/udp/239.1.12.11:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Спорт",
+    },
+    "title": " Бойцовский клуб",
+    "url": "http://192.168.1.1:4000/udp/239.1.12.9:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Спорт",
+    },
+    "title": " КХЛ",
+    "url": "http://192.168.1.1:4000/udp/239.1.12.6:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Спорт",
+    },
+    "title": " Матч! Арена",
+    "url": "http://192.168.1.1:4000/udp/239.1.12.7:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Спорт",
+    },
+    "title": " Матч! Боец",
+    "url": "http://192.168.1.1:4000/udp/239.1.12.9:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Спорт",
+    },
+    "title": " Матч! Игра",
+    "url": "http://192.168.1.1:4000/udp/239.1.12.10:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Спорт",
+    },
+    "title": " Матч! Наш Спорт",
+    "url": "http://192.168.1.1:4000/udp/239.1.12.12:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Спорт",
+    },
+    "title": " Футбол",
+    "url": "http://192.168.1.1:4000/udp/239.1.12.5:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Хобби",
+    },
+    "title": " 2x2",
+    "url": "http://192.168.1.1:4000/udp/239.1.2.1:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Хобби",
+    },
+    "title": " WBC",
+    "url": "http://192.168.1.1:4000/udp/239.1.2.2:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Хобби",
+    },
+    "title": " Авто плюс",
+    "url": "http://192.168.1.1:4000/udp/239.1.2.6:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Хобби",
+    },
+    "title": " Драйв",
+    "url": "http://192.168.1.1:4000/udp/239.1.2.4:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Хобби",
+    },
+    "title": " Живи",
+    "url": "http://192.168.1.1:4000/udp/239.1.2.12:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Хобби",
+    },
+    "title": " Кухня ТВ",
+    "url": "http://192.168.1.1:4000/udp/239.1.2.15:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Хобби",
+    },
+    "title": " Ностальгия",
+    "url": "http://192.168.1.1:4000/udp/239.1.2.13:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Хобби",
+    },
+    "title": " Оружие",
+    "url": "http://192.168.1.1:4000/udp/239.1.2.7:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Хобби",
+    },
+    "title": " Охота и рыбалка",
+    "url": "http://192.168.1.1:4000/udp/239.1.2.5:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Хобби",
+    },
+    "title": " Психология21",
+    "url": "http://192.168.1.1:4000/udp/239.1.2.9:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Хобби",
+    },
+    "title": " Сарафан",
+    "url": "http://192.168.1.1:4000/udp/239.1.2.11:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Хобби",
+    },
+    "title": " Телекафе",
+    "url": "http://192.168.1.1:4000/udp/239.1.2.18:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Хобби",
+    },
+    "title": " Усадьба",
+    "url": "http://192.168.1.1:4000/udp/239.1.2.17:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Хобби",
+    },
+    "title": " Успех",
+    "url": "http://192.168.1.1:4000/udp/239.1.2.3:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Новости",
+    },
+    "title": " EuroNews",
+    "url": "http://192.168.1.1:4000/udp/239.1.1.5:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Новости",
+    },
+    "title": " Lifenews",
+    "url": "http://192.168.1.1:4000/udp/239.1.1.7:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Новости",
+    },
+    "title": " Russia Today",
+    "url": "http://192.168.1.1:4000/udp/239.1.1.8:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Новости",
+    },
+    "title": " Дождь",
+    "url": "http://192.168.1.1:4000/udp/239.1.1.6:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Новости",
+    },
+    "title": " Мир 24",
+    "url": "http://192.168.1.1:4000/udp/239.1.1.3:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Новости",
+    },
+    "title": " РБК",
+    "url": "http://192.168.1.1:4000/udp/239.1.1.2:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Новости",
+    },
+    "title": " Страна",
+    "url": "http://192.168.1.1:4000/udp/239.1.1.9:1234",
+  },
+  Object {
+    "options": Object {
+      "group-title": "Актив",
+    },
+    "title": " ТНТ4",
+    "url": "http://192.168.1.1:4000/udp/239.1.2.16:1234",
+  },
+]
+`;

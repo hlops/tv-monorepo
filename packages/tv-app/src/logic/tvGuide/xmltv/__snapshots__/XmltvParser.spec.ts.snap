@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`XmltvParser parse() can parse xmltv file from resources 1`] = `
+Object {
+  "CBS Affiliate": Array [
+    Object {
+      "categories": Array [
+        "Talk",
+        "News",
+        "Series",
+      ],
+      "desc": "Republican candidate John McCain; premiere of the film \\"The Dark Knight.\\"",
+      "start": 2008-07-15T12:00:00.000Z,
+      "stop": 2008-07-15T14:00:00.000Z,
+      "title": "The Early Show",
+    },
+    Object {
+      "categories": Array [
+        "Talk",
+        "Series",
+      ],
+      "desc": "Actresses Kim Raver, Brooke Shields and Lindsay Price (\\"Lipstick Jungle\\"); women in their 40s tell why they got breast implants; a 30-minute meal.",
+      "start": 2008-07-15T14:00:00.000Z,
+      "stop": 2008-07-15T15:00:00.000Z,
+      "title": "Rachael Ray",
+    },
+    Object {
+      "categories": Array [
+        "Game show",
+        "Series",
+      ],
+      "desc": "Contestants bid for prizes then compete for fabulous showcases.",
+      "start": 2008-07-15T15:00:00.000Z,
+      "stop": 2008-07-15T16:00:00.000Z,
+      "title": "The Price Is Right",
+    },
+    Object {
+      "categories": Array [
+        "Game show",
+        "Series",
+      ],
+      "desc": undefined,
+      "start": 2008-07-15T16:00:00.000Z,
+      "stop": 2008-07-15T16:30:00.000Z,
+      "title": "Jeopardy!",
+    },
+    Object {
+      "categories": Array [
+        "Soap",
+        "Series",
+      ],
+      "desc": "Jeff thinks Kyon stole the face cream; Nikki asks Nick to give David a chance; Amber begs Adrian to go to Australia.",
+      "start": 2008-07-15T16:30:00.000Z,
+      "stop": 2008-07-15T17:30:00.000Z,
+      "title": "The Young and the Restless",
+    },
+  ],
+  "PBS Affiliate": Array [
+    Object {
+      "categories": Array [
+        "Newsmagazine",
+        "Interview",
+        "Public affairs",
+        "Series",
+      ],
+      "desc": "Jordan's Queen Rania has made job creation a priority to help curb the staggering unemployment rates among youths in the Middle East.",
+      "start": 2008-07-15T06:30:00.000Z,
+      "stop": 2008-07-15T07:00:00.000Z,
+      "title": "NOW on PBS",
+    },
+    Object {
+      "categories": Array [
+        "Anthology",
+        "Mystery",
+        "Series",
+      ],
+      "desc": "Foyle investigates an explosion at a munitions factory, which he comes to believe may have been premeditated.",
+      "start": 2008-07-15T07:00:00.000Z,
+      "stop": 2008-07-15T08:30:00.000Z,
+      "title": "Mystery!",
+    },
+    Object {
+      "categories": Array [
+        "Anthology",
+        "Mystery",
+        "Series",
+      ],
+      "desc": "The murder of a prominent scientist may have been due to a gambling debt.",
+      "start": 2008-07-15T08:30:00.000Z,
+      "stop": 2008-07-15T10:00:00.000Z,
+      "title": "Mystery!",
+    },
+    Object {
+      "categories": Array [
+        "News",
+        "Series",
+      ],
+      "desc": "International issues.",
+      "start": 2008-07-15T10:00:00.000Z,
+      "stop": 2008-07-15T10:30:00.000Z,
+      "title": "BBC World News",
+    },
+    Object {
+      "categories": Array [
+        "Exercise",
+        "Series",
+      ],
+      "desc": undefined,
+      "start": 2008-07-15T10:30:00.000Z,
+      "stop": 2008-07-15T11:00:00.000Z,
+      "title": "Sit and Be Fit",
+    },
+  ],
+}
+`;
