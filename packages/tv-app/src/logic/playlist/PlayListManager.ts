@@ -1,23 +1,45 @@
-import keyFileStorage from 'key-file-storage';
-import { KeyFileStorage } from 'key-file-storage/dist/src/key-file-storage';
-import _ from 'lodash';
-import { ChannelHelper } from './Channel';
-import { M3uParser } from './m3u/M3uParser';
+import keyFileStorage from "key-file-storage";
+import { KeyFileStorage } from "key-file-storage/dist/src/key-file-storage";
+import _ from "lodash";
+import { QueryParams } from "../common/QueryParams";
+import { Channel, ChannelHelper } from "./Channel";
+import { M3uParser } from "./m3u/M3uParser";
 
 export class PlayListManager {
-	constructor(private readonly storage: KeyFileStorage = keyFileStorage('node_data', true)) {
-		this.storage = storage;
-	}
+  constructor(
+    private readonly storage: KeyFileStorage = keyFileStorage("node_data", true)
+  ) {
+    this.storage = storage;
+    this.storage["channels/"];
+  }
 
-	public importPlayList(stream: NodeJS.ReadableStream): Promise<void> {
-		return new M3uParser().parse(stream).then(channels => {
-			return Promise.all(
-				_.map(
-					channels,
-					channel =>
-						this.storage(`channels/${ChannelHelper.getHash(channel.url)}`, channel)
-				)
-			).then();
-		});
-	}
+  public importPlayList(stream: NodeJS.ReadableStream): Promise<void> {
+    return new M3uParser().parse(stream).then(channels => {
+      return Promise.all(
+        _.map(channels, channel =>
+          this.storage(
+            `channels/${ChannelHelper.getHash(channel.url)}`,
+            channel
+          )
+        )
+      ).then();
+    });
+  }
+
+  public findPlayLists(params: QueryParams): Promise<Channel[]> {
+    const first = params.page * params.pageSize;
+    return this.storage("channels/")
+      .then(ids =>
+        Promise.all(
+          _.map(ids, id =>
+            this.storage(id).then(channel =>
+              ChannelHelper.find(channel, params.query)
+            )
+          )
+        )
+      )
+      .then(channels =>
+        _.compact(channels || []).slice(first, first + params.pageSize)
+      );
+  }
 }
