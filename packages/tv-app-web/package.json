@@ -6,16 +6,19 @@
     "prettier-plugin-svelte": "^0.7.0",
     "rollup": "^1.29.1",
     "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-css-only": "^2.0.0",
     "rollup-plugin-livereload": "^1.0.4",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.0.4",
     "rollup-plugin-svelte": "^5.1.1",
     "rollup-plugin-terser": "^5.2.0",
     "rollup-plugin-typescript": "^1.0.1",
-    "svelte": "^3.17.2",
+    "svelte": "^3.17.3",
     "tslib": "^1.10.0",
     "typescript": "^3.7.5"
   },
   "dependencies": {
+    "@smarthtmlelements/smart-elements": "^6.1.0",
     "sirv-cli": "^0.4.5",
     "wired-elements": "^2.0.0"
   },
