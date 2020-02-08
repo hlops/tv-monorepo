@@ -1,0 +1,13 @@
+<script>
+  import "@smarthtmlelements/smart-elements/source/modules/smart.listbox.js";
+  import { guides } from "../../logic/client/TvGuides";
+  import TvGuideList from "./TvGuideList.svelte";
+  import TvGuideDetails from "./TvGuideDetails.svelte";
+
+  let selectedGuide = {};
+</script>
+
+<div class="horizontal-flex-container">
+  <TvGuideList tvGuides={$guides} bind:selected={selectedGuide} />
+  <TvGuideDetails tvGuide={selectedGuide} />
+</div>

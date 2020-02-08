@@ -1,11 +1,12 @@
-import svelte from "rollup-plugin-svelte";
-import resolve from "rollup-plugin-node-resolve";
-import commonjs from "rollup-plugin-commonjs";
+import commonjs from "@rollup/plugin-commonjs";
+import resolve from "@rollup/plugin-node-resolve";
+import typescript from "@rollup/plugin-typescript";
+import bundleSize from "rollup-plugin-bundle-size";
+import copy from "rollup-plugin-copy";
+import css from "rollup-plugin-css-only";
 import livereload from "rollup-plugin-livereload";
+import svelte from "rollup-plugin-svelte";
 import { terser } from "rollup-plugin-terser";
-import rollup_start_dev from "./rollup_start_dev";
-import typescript from "rollup-plugin-typescript";
-import postcss from "rollup-plugin-postcss";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -15,39 +16,43 @@ export default {
     sourcemap: true,
     format: "iife",
     name: "app",
-    file: "public/bundle.js"
+    file: "public/build/bundle.js"
   },
   plugins: [
-    postcss({
-      extract: true,
-      modules: false,
-    }),
-    typescript(),
+    css({ output: "public/build/extra.css" }),
     svelte({
       // enable run-time checks when not in production
       dev: !production,
       // we'll extract any component CSS out into
       // a separate file — better for performance
       css: css => {
-        css.write("public/bundle.css");
+        css.write("public/build/bundle.css");
       }
     }),
-
+    copy({
+      targets: [
+        {
+          src: ["./node_modules/@smarthtmlelements/smart-elements/source/styles/font/*"],
+          dest: "public/build/font"
+        }
+      ]
+    }),
     // If you have external dependencies installed from
     // npm, you'll most likely need these plugins. In
     // some cases you'll need additional configuration —
     // consult the documentation for details:
-    // https://github.com/rollup/rollup-plugin-commonjs
+    // https://github.com/rollup/plugins/tree/master/packages/commonjs
     resolve({
       browser: true,
-      dedupe: importee =>
-        importee === "svelte" || importee.startsWith("svelte/")
+      dedupe: importee => importee === "svelte" || importee.startsWith("svelte/")
     }),
+    typescript(),
     commonjs(),
+    bundleSize(),
 
-    // In dev mode, call `npm run start:dev` once
+    // In dev mode, call `npm run start` once
     // the bundle has been generated
-    !production && rollup_start_dev,
+    !production && serve(),
 
     // Watch the `public` directory and refresh the
     // browser on changes when not in production
@@ -58,6 +63,24 @@ export default {
     production && terser()
   ],
   watch: {
-    clearScreen: false
+    clearScreen: false,
+    chokidar: false
   }
 };
+
+function serve() {
+  let started = false;
+
+  return {
+    writeBundle() {
+      if (!started) {
+        started = true;
+
+        require("child_process").spawn("npm", ["run", "start", "--", "--dev"], {
+          stdio: ["ignore", "inherit", "inherit"],
+          shell: true
+        });
+      }
+    }
+  };
+}
