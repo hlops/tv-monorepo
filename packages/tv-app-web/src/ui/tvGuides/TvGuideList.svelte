@@ -1,17 +1,11 @@
 <script>
   export { tvGuides, selected };
 
-  import { onMount } from "svelte";
   import * as _ from "lodash-es";
 
   let tvGuides = {},
     selected,
     tvGuideControl;
-
-  onMount(async () => {
-    tvGuideControl = document.querySelector("#tvGuideList");
-    tvGuideControl.filterable = true;
-  });
 
   $: if (tvGuideControl && !_.isEmpty(tvGuides)) {
     tvGuideControl.dataSource = [...tvGuides];
@@ -28,12 +22,10 @@
   }
 </script>
 
-<style>
-  smart-list-box {
-    flex: auto;
-  }
-</style>
-
 <div class="vertical-flex-container">
-  <smart-list-box id="tvGuideList" placeholder="loading..." on:change={change} />
+  <wired-listbox id="tvGuideList" on:selected={change}>
+    {#each tvGuides as giude}
+      <wired-item>{giude}</wired-item>
+    {/each}
+  </wired-listbox>
 </div>

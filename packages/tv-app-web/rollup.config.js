@@ -22,20 +22,12 @@ export default {
     css({ output: "public/build/extra.css" }),
     svelte({
       // enable run-time checks when not in production
-      dev: !production,
+      dev: false,
       // we'll extract any component CSS out into
       // a separate file — better for performance
       css: css => {
         css.write("public/build/bundle.css");
       }
-    }),
-    copy({
-      targets: [
-        {
-          src: ["./node_modules/@smarthtmlelements/smart-elements/source/styles/font/*"],
-          dest: "public/build/font"
-        }
-      ]
     }),
     // If you have external dependencies installed from
     // npm, you'll most likely need these plugins. In

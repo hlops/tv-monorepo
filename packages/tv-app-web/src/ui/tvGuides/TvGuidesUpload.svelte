@@ -1,5 +1,5 @@
 <script>
-  import "@smarthtmlelements/smart-elements/source/modules/smart.button.js";
+  import { WiredButton } from "wired-button";
 
   let files = [];
 
@@ -26,8 +26,8 @@
 
 <div class="horizontal-flex-container">
   <form>
-    <input type="file" bind:files onchange={sendData} />
-    <smart-button onclick={sendData}>Send</smart-button>
+    <input type="file" bind:files />
+    <wired-button on:click={sendData}>Send</wired-button>
   </form>
 
 </div>

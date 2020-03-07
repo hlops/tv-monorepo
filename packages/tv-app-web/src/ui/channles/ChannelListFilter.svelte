@@ -1,20 +1,17 @@
 <script>
   export { filter };
 
-  import "@smarthtmlelements/smart-elements/source/modules/smart.listbox.js";
+  import { WiredCombo } from "wired-combo";
 
   let filter;
+
   function change(e) {
-    if (e && e.detail) {
-      if (e.detail.selected) {
-        filter = e.detail.value;
-      }
-    }
+    filter = e.detail.selected;
   }
 </script>
 
-<smart-drop-down-list selected-indexes="[{filter}]" on:change={change}>
-  <smart-list-item value="0">Все</smart-list-item>
-  <smart-list-item value="1">Смапленные</smart-list-item>
-  <smart-list-item value="2">Несмапленные</smart-list-item>
-</smart-drop-down-list>
+<wired-combo selected={filter} on:selected={change}>
+  <wired-item value="0">Все</wired-item>
+  <wired-item value="1">Смапленные</wired-item>
+  <wired-item value="2">Несмапленные</wired-item>
+</wired-combo>

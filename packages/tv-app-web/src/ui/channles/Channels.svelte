@@ -1,5 +1,4 @@
 <script>
-  import "@smarthtmlelements/smart-elements/source/modules/smart.listbox.js";
   import { onDestroy } from "svelte";
   import * as _ from "lodash-es";
   import { channels, ModifiedChannelsTracker } from "../../logic/client/Channels";

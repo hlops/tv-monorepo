@@ -3,6 +3,10 @@ import * as rxjs from "rxjs";
 import * as rxjsOperators from "rxjs/operators";
 import { writable } from "svelte/store";
 
+interface Dictionary<T> {
+  [index: string]: T;
+}
+
 enum UpdateModifier {
   UPDATE,
   ADD,
@@ -21,7 +25,7 @@ interface ModifiedChannel {
   modifier: UpdateModifier;
 }
 
-export const channels = writable<_.Dictionary<Channel> | undefined>(undefined);
+export const channels = writable<Channel[] | undefined>(undefined);
 export const channelGroups = writable<string[]>([]);
 
 const modifiedChannels = new rxjs.Subject<ModifiedChannel>();
@@ -39,7 +43,7 @@ function loadChannels(): void {
     .then(response => response.json())
     .then(json =>
       channels.set(
-        _.map(json.channels, (channel, index) => {
+        _.map<Channel, Channel>(json.channels, (channel, index) => {
           channel.id = "" + index;
           return channel;
         })
@@ -87,10 +91,10 @@ export class ChannelsGroupsTracker extends Tracker {
     super();
     this.subscribeStore(
       channels.subscribe(value => {
-        const map = _.reduce(
+        const map = _.reduce<Channel, Dictionary<true>>(
           value,
           (result, channel) => {
-            result[channel.group] = "";
+            result[channel.group] = true;
             return result;
           },
           {}

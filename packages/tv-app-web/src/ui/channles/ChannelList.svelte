@@ -1,45 +1,33 @@
 <script>
   export { channels, selected };
 
-  import { onMount } from "svelte";
+  //  import { WiredListbox } from "wired-listbox";
   import * as _ from "lodash-es";
 
   let channels = {},
     selected,
-    channelControl;
+    filteredChannels,
+    value;
 
-  onMount(async () => {
-    channelControl = document.querySelector("#channelsList");
-    channelControl.valueMember = "id";
-    channelControl.displayMember = "title";
-    channelControl.groupMember = "group";
-    channelControl.grouped = true;
-    channelControl.filterable = true;
-  });
+  $: filteredChannels = _.map(_.values(channels), channel => ({
+    id: channel.id,
+    title: channel.title,
+    url: channel.url,
+    group: channel.group
+  }));
 
-  $: if (channelControl && !_.isEmpty(channels)) {
-    channelControl.dataSource = _.map(_.values(channels), channel => ({
-      id: channel.id,
-      title: channel.title,
-      group: channel.group
-    }));
-  }
-
-  function change(e) {
-    if (e && e.detail) {
-      if (e.detail.selected) {
-        selected = channels[e.detail.value];
-      } else {
-        selected = undefined;
-      }
-    }
-  }
+  $: selected = filteredChannels[value] || {};
 </script>
 
-<style>
-  smart-list-box {
-    height: 100%;
-  }
-</style>
-
-<smart-list-box id="channelsList" placeholder="loading..." on:change={change} />
+<!--
+<wired-listbox on:selected={change}>
+  {#each filteredChannels as channel}
+    <wired-item value={channel.id}>{channel.title}</wired-item>
+  {/each}
+</wired-listbox>
+-->
+<select size="10" bind:value>
+  {#each filteredChannels as channel, i}
+    <option value={i}>{channel.title}</option>
+  {/each}
+</select>

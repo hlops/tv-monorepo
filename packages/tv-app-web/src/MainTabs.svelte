@@ -1,25 +1,19 @@
 <script>
-  import "@smarthtmlelements/smart-elements/source/modules/smart.tabs.js";
+  import { WiredTab } from "./ui/wired/wired-tab";
+  import { WiredTabs } from "./ui/wired/wired-tabs";
   import TvGuidesUpload from "./ui/tvGuides/TvGuidesUpload.svelte";
   import Channels from "./ui/channles/Channels.svelte";
   import TvGuides from "./ui/tvGuides/TvGuides.svelte";
 </script>
 
-<style>
-  smart-tabs {
-    width: 100%;
-    height: 100%;
-  }
-</style>
-
-<smart-tabs selected-index="0">
-  <smart-tab-item label="Каналы">
+<wired-tabs selected="Two">
+  <wired-tab name="One" label="Каналы">
     <Channels />
-  </smart-tab-item>
-  <smart-tab-item label="Телепрограмма">
+  </wired-tab>
+  <wired-tab name="Two" label="Телепрограмма">
     <TvGuides />
-  </smart-tab-item>
-  <smart-tab-item label="Загрузка">
+  </wired-tab>
+  <wired-tab name="Three" label="Загрузка">
     <TvGuidesUpload />
-  </smart-tab-item>
-</smart-tabs>
+  </wired-tab>
+</wired-tabs>
