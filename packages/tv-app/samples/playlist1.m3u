@@ -1,0 +1,43 @@
+#EXTM3U m3uautoload=1 cache=500 deinterlace=1 aspect-ratio=4:3 crop=690x550+10+10
+
+#EXTINF:-1 group-title="Познавательный", 365 Дней
+http://192.168.1.1:4000/udp/239.1.5.20:1234
+
+#EXTINF:-1, Amazing Life
+http://192.168.1.1:4000/udp/239.1.5.19:1234
+
+#EXTINF:-1, Da Vinci
+http://192.168.1.1:4000/udp/239.1.5.6:1234
+
+#EXTINF:-1, Nat Geo Wild
+http://192.168.1.1:4000/udp/239.1.5.16:1234
+
+#EXTINF:-1, National Geographic
+http://192.168.1.1:4000/udp/239.1.5.8:1234
+
+#EXTINF:-1, Russian Travel Guide
+http://192.168.1.1:4000/udp/239.1.5.13:1234
+
+#EXTINF:-1, Travel Adventure
+http://192.168.1.1:4000/udp/239.1.5.7:1234
+
+#EXTINF:-1, ВРЕМЯ
+http://192.168.1.1:4000/udp/239.1.5.4:1234
+
+#EXTINF:-1, Живая планета
+http://192.168.1.1:4000/udp/239.1.5.23:1234
+
+#EXTINF:-1, История
+http://192.168.1.1:4000/udp/239.1.5.21:1234
+
+#EXTINF:-1 group-title="Спорт", Eurosport 1
+http://192.168.1.1:4000/udp/239.1.12.3:1234
+
+#EXTINF:-1, Eurosport 2
+http://192.168.1.1:4000/udp/239.1.12.4:1234
+
+#EXTINF:-1, Extreme Sports
+http://192.168.1.1:4000/udp/239.1.12.11:1234
+
+#EXTINF:-1, Бойцовский клуб
+http://192.168.1.1:4000/udp/239.1.12.9:1234

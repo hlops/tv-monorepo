@@ -18,9 +18,9 @@ describe('PlayListManager', () => {
 		delete storage['*'];
 	});
 
-    it('importPlayList() can successfully import channels', done => {
+    it('import() can successfully import channels', done => {
 		new PlayListManager(storage)
-			.importPlayList(fs.createReadStream('./samples/playlist.m3u', 'utf8'))
+			.import(fs.createReadStream('./samples/playlist.m3u', 'utf8'))
 			.then(() => {
 				expect(storage['channels/']).toMatchSnapshot();
 				done();

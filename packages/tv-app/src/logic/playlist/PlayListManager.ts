@@ -5,20 +5,21 @@ import { QueryParams } from "../common/QueryParams";
 import { Channel, ChannelHelper } from "./Channel";
 import { M3uParser } from "./m3u/M3uParser";
 
+const STORAGE_PREFIX = "channels/";
+
 export class PlayListManager {
   constructor(
     private readonly storage: KeyFileStorage = keyFileStorage("node_data", true)
   ) {
-    this.storage = storage;
-    this.storage["channels/"];
+    this.storage[STORAGE_PREFIX];
   }
 
-  public importPlayList(stream: NodeJS.ReadableStream): Promise<void> {
+  public import(stream: NodeJS.ReadableStream): Promise<void> {
     return new M3uParser().parse(stream).then(channels => {
       return Promise.all(
         _.map(channels, channel =>
           this.storage(
-            `channels/${ChannelHelper.getHash(channel.url)}`,
+            `${STORAGE_PREFIX}${ChannelHelper.getHash(channel.url)}`,
             channel
           )
         )
@@ -26,9 +27,9 @@ export class PlayListManager {
     });
   }
 
-  public findPlayLists(params: QueryParams): Promise<Channel[]> {
+  public find(params: QueryParams): Promise<Channel[]> {
     const first = params.page * params.pageSize;
-    return this.storage("channels/")
+    return this.storage(STORAGE_PREFIX)
       .then(ids =>
         Promise.all(
           _.map(ids, id =>

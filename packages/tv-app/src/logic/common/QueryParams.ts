@@ -1,8 +1,8 @@
-const DEFAULT_PAGE_SIZE = 10;
+const DEFAULT_PAGE_SIZE = -1;
 
 export class QueryParams {
-    public page = 0;
-    public pageSize = DEFAULT_PAGE_SIZE;
+    public page: number;
+    public pageSize: number;
     public query = '';
 
     constructor(options: _.Dictionary<string>) {

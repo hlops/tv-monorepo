@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TvGuideManager importPlayList() can successfully import channels 1`] = `
+exports[`TvGuideManager import() can successfully import channels: a 1`] = `
 Array [
-  "guide/CBS Affiliate",
   "guide/PBS Affiliate",
+  "guide/CBS Affiliate",
 ]
 `;
 
-exports[`TvGuideManager importPlayList() can successfully import channels 2`] = `
+exports[`TvGuideManager import() can successfully import channels: b 1`] = `
 Array [
   Object {
     "categories": Array [
