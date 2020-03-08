@@ -23,9 +23,9 @@
 </script>
 
 <div class="vertical-flex-container">
-  <wired-listbox id="tvGuideList" on:selected={change}>
+  <select id="tvGuideList" on:selected={change}>
     {#each tvGuides as giude}
-      <wired-item>{giude}</wired-item>
+      <option>{giude}</option>
     {/each}
-  </wired-listbox>
+  </select>
 </div>

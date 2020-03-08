@@ -1,6 +1,4 @@
 <script>
-  import { WiredButton } from "wired-button";
-
   let files = [];
 
   function sendData() {
@@ -27,7 +25,7 @@
 <div class="horizontal-flex-container">
   <form>
     <input type="file" bind:files />
-    <wired-button on:click={sendData}>Send</wired-button>
+    <button on:click={sendData}>Send</button>
   </form>
 
 </div>

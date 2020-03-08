@@ -25,10 +25,29 @@
   onDestroy(() => modifiedChannelsTracker.onDestroy());
 </script>
 
-<div class="vertical-flex-container">
-  <ChannelListFilter bind:filter />
-  <div class="horizontal-flex-container">
+<div class="flex flex-wrap -mx-3 mb-6">
+  <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+    <label
+      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+      for="channelsQuery">
+      Поиск
+    </label>
+    <input type="search" class="w-full" id="channelsQuery" placeholder="Search..." />
+  </div>
+  <div class="w-full md:w-2/3 px-3 mb-6 md:mb-0">
+    <label
+      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+      for="channelsFilter">
+      Фильтр
+    </label>
+    <ChannelListFilter bind:filter id="channelsFilter" />
+  </div>
+</div>
+<div class="flex flex-wrap -mx-3 mb-6">
+  <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
     <ChannelList channels={filteredChannels} bind:selected={selectedChannel} />
+  </div>
+  <div class="w-full md:w-2/3 px-3 mb-6 md:mb-0">
     <ChannelDetails channel={selectedChannel} />
   </div>
 </div>

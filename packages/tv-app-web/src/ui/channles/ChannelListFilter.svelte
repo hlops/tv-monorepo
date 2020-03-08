@@ -1,8 +1,6 @@
 <script>
   export { filter };
 
-  import { WiredCombo } from "wired-combo";
-
   let filter;
 
   function change(e) {
@@ -10,8 +8,8 @@
   }
 </script>
 
-<wired-combo selected={filter} on:selected={change}>
-  <wired-item value="0">Все</wired-item>
-  <wired-item value="1">Смапленные</wired-item>
-  <wired-item value="2">Несмапленные</wired-item>
-</wired-combo>
+<select selected={filter} on:selected={change}>
+  <option value="0">Все</option>
+  <option value="1">Смапленные</option>
+  <option value="2">Несмапленные</option>
+</select>
