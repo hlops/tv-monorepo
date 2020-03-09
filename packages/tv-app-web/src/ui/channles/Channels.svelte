@@ -1,12 +1,12 @@
 <script>
   import { onDestroy } from "svelte";
   import * as _ from "lodash-es";
-  import { channels, ModifiedChannelsTracker } from "../../logic/client/Channels";
+  import { channels, channelGroups, ModifiedChannelsTracker } from "../../logic/client/Channels";
   import ChannelListFilter from "./ChannelListFilter.svelte";
   import ChannelList from "./ChannelList.svelte";
   import ChannelDetails from "./ChannelDetails.svelte";
 
-  let selectedChannel = {},
+  let selectedChannel,
     filter = "0",
     filteredChannels;
 
@@ -25,29 +25,45 @@
   onDestroy(() => modifiedChannelsTracker.onDestroy());
 </script>
 
-<div class="flex flex-wrap -mx-3 mb-6">
-  <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-    <label
-      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-      for="channelsQuery">
-      Поиск
-    </label>
-    <input type="search" class="w-full" id="channelsQuery" placeholder="Search..." />
+<style>
+  .block {
+    @apply flex flex-wrap -mx-3 mb-3;
+  }
+
+  .block > div {
+    @apply px-3 mb-6;
+  }
+
+  .block > div > label {
+    @apply block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2;
+  }
+</style>
+
+<div class="block">
+  <div class="md:w-1/3">
+    <label for="channels-query">Поиск</label>
+    <input type="search" class="w-full" id="channels-query" placeholder="Search..." />
   </div>
-  <div class="w-full md:w-2/3 px-3 mb-6 md:mb-0">
-    <label
-      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-      for="channelsFilter">
-      Фильтр
-    </label>
-    <ChannelListFilter bind:filter id="channelsFilter" />
+  <div class="md:w-1/3">
+    <label for="channel-filter-group">Группа</label>
+    <select id="channel-filter-group">
+      {#each $channelGroups as group}
+        <option value={group}>{group}</option>
+      {/each}
+    </select>
+  </div>
+  <div class="md:w-1/3">
+    <label for="channels-filter-mapping">Маппинг</label>
+    <ChannelListFilter bind:filter id="channels-filter-mapping" />
   </div>
 </div>
-<div class="flex flex-wrap -mx-3 mb-6">
-  <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+<div class="block">
+  <div class="md:w-1/3">
     <ChannelList channels={filteredChannels} bind:selected={selectedChannel} />
   </div>
-  <div class="w-full md:w-2/3 px-3 mb-6 md:mb-0">
-    <ChannelDetails channel={selectedChannel} />
+  <div class="md:w-2/3">
+    {#if selectedChannel && selectedChannel.url}
+      <ChannelDetails channel={selectedChannel} />
+    {/if}
   </div>
 </div>

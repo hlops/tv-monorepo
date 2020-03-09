@@ -13,7 +13,7 @@
 
 <style>
   .tab-header {
-    @apply inline-block border rounded py-2 px-4 cursor-pointer;
+    @apply inline-block border rounded py-1 px-4 cursor-pointer;
   }
 
   .active {
