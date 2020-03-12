@@ -36,20 +36,19 @@
 <div class="container mx-auto px-4 max-w-screen-lg">
   <ul class="flex justify-between">
     {#each tabs as tab}
-      <li class="mr-3">
-        <a
-          class="tab-header"
+      <li class="tab-header"
           class:active={tab === currentTab}
           class:inactive={tab !== currentTab}
           on:click={() => selectTab(tab)}>
-          {tab}
-        </a>
+        {tab}
       </li>
     {/each}
   </ul>
   <div>
     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-      {#if currentTab === 'actions'}{/if}
+      {#if currentTab === 'actions'}
+        // to be implemented
+      {/if}
       {#if currentTab === 'channels'}
         <Channels />
       {/if}

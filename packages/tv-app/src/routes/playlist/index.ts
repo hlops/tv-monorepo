@@ -27,6 +27,7 @@ export default (
     url: "/playlist",
     method: ["GET"],
     handler: async (request, reply) => {
+      console.log(opts)
       return new PlayListManager()
         .find(new QueryParams(request.query))
         .then(channels =>

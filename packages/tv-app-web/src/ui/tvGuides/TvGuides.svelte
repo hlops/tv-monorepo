@@ -1,6 +1,7 @@
 <script>
   import TvGuideList from "./TvGuideList.svelte";
   import TvGuideDetails from "./TvGuideDetails.svelte";
+  import { guides } from "../../logic/client/TvGuides";
 
   let selectedGuide = {};
 </script>

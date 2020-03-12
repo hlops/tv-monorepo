@@ -4,7 +4,7 @@ import * as sax from "sax";
 import { SAXStream, Tag } from "sax";
 import stream from "stream";
 import Readable from "stream";
-import zlib = require("zlib");
+import zlib from "zlib";
 
 type Node = Tag;
 

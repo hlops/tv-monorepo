@@ -1,6 +1,5 @@
 import { FastifyInstance } from "fastify";
 import * as fs from "fs";
-import { QueryParams } from "../../logic/common/QueryParams";
 import { TvGuideManager } from "../../logic/tvGuide/TvGuideManager";
 
 export default (
@@ -12,6 +11,7 @@ export default (
     url: "/tvGuide",
     method: ["GET"],
     handler: async (request, reply) => {
+      console.log(request, opts);
       return new TvGuideManager()
         .find()
         .then(guides =>

@@ -1,27 +1,12 @@
 {
+  "extends": "./tsconfig.build.json",
+
   "compilerOptions": {
-    "target": "es2017",
-    "module": "es2015",
-    "moduleResolution": "node",
-    "lib": [
-      "es2017",
-      "dom"
-    ],
-    "declaration": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "noImplicitAny": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
-  },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "src"
-  ]
+    "baseUrl": "./packages",
+    "paths": {
+      "@tv-monorepo/tv-web-app": ["tv-web-app/src"],
+      "@tv-monorepo/tv-app": ["tv-app/src"],
+      "@tv-monorepo/*": ["*/src"]
+    }
+  }
 }
