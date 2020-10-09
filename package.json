@@ -8,7 +8,7 @@
     "lint": "eslint --debug src/",
     "lint:write": "eslint --debug src/ --fix",
     "prettier": "prettier --write src/**/*.*",
-    "publish": "lerna exec --concurrency 1 \"npx --no-install semantic-release --dry-run\" && node -e \"require('semantic-release-monorepo-hooks').hookAfterAll()\""
+    "publish": "lerna exec --concurrency 1 \"npx --no-install semantic-release\" && node -e \"require('semantic-release-monorepo-hooks').hookAfterAll()\""
   },
   "repository": {
     "type": "git",
