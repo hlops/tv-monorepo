@@ -1,6 +1,6 @@
 {
   "name": "tv-app",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "scripts": {
     "build": "tsc",
@@ -33,6 +33,6 @@
     "moment": "^2.24.0",
     "sax": "^1.2.4",
     "tslib": "^1.11.1",
-    "tv-common": "^1.0.0"
+    "tv-common": "^0.0.1"
   }
 }

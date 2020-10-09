@@ -1,6 +1,6 @@
 {
   "name": "svelte-app",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
@@ -11,6 +11,7 @@
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
     "@rollup/plugin-typescript": "^4.0.0",
+    "@types/lodash-es": "^4.17.3",
     "lodash-es": "^4.17.15",
     "postcss": "^7.0.27",
     "postcss-load-config": "^2.1.0",
@@ -25,12 +26,11 @@
     "svelte": "^3.19.2",
     "svelte-preprocess": "^3.4.0",
     "tailwindcss": "^1.2.0",
-    "typescript": "^3.8.3",
-    "@types/lodash-es": "^4.17.3",
-    "tslib": "^1.11.1"
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
     "sirv-cli": "^0.4.5",
-    "tv-common": "^1.0.0"
+    "tv-common": "^0.0.1"
   }
 }
