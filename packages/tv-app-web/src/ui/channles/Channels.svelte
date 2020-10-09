@@ -27,7 +27,7 @@
 
 <style>
   .block {
-    @apply flex flex-wrap -mx-3 mb-3;
+    @apply flex flex-wrap mb-3;
   }
 
   .block > div {

@@ -1,6 +1,6 @@
 import { FastifyInstance } from "fastify";
 import * as fs from "fs";
-import { TvGuideManager } from "../../logic/tvGuide/TvGuideManager";
+import { TvGuideManager } from "../logic/tvGuide/TvGuideManager";
 
 export default (
   server: FastifyInstance,

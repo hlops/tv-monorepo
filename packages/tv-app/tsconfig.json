@@ -1,11 +1,10 @@
 {
   "extends": "../../tsconfig.build.json",
   "compilerOptions": {
-    "allowJs": true,
+    "allowJs": false,
     "esModuleInterop": true,
+    "module": "commonjs",
     "outDir": "./lib"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

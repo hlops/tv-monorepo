@@ -50,6 +50,7 @@ server.register(fastifyMultipart, {
 });
 server.register(playlistRoute);
 server.register(tvGuideRoute);
+server.register(tvGuideRoute);
 
 const start = async () => {
   try {

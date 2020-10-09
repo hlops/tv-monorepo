@@ -30,6 +30,7 @@
     "tslib": "^1.11.1"
   },
   "dependencies": {
-    "sirv-cli": "^0.4.5"
+    "sirv-cli": "^0.4.5",
+    "tv-common": "^1.0.0"
   }
 }

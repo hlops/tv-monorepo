@@ -1,5 +1,5 @@
 {
-  "name": "monorepo",
+  "name": "tv-monorepo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --debug src/",
     "lint:write": "eslint --debug src/ --fix",
-    "prettier": "prettier --write src/**/*.*"
+    "prettier": "prettier --write src/**/*.*",
+    "publish": "lerna exec --concurrency 1 \"npx --no-install semantic-release --dry-run\" && node -e \"require('semantic-release-monorepo-hooks').hookAfterAll()\""
   },
   "repository": {
     "type": "git",
@@ -27,11 +28,13 @@
     ]
   },
   "devDependencies": {
-    "lerna": "^3.20.2",
-    "jest": "^25.1.0",
-    "prettier": "^1.19.1",
-    "ts-jest": "^25.2.1",
-    "typescript": "^3.8.3",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/exec": "^5.0.0",
+    "@semantic-release/git": "^8.0.0",
+    "@semantic-release/github": "^7.1.1",
+    "@semantic-release/npm": "^7.0.6",
+    "@semantic-release/release-notes-generator": "^9.0.1",
     "@typescript-eslint/eslint-plugin": "^2.23.0",
     "@typescript-eslint/parser": "^2.23.0",
     "eslint": "^6.8.0",
@@ -41,10 +44,19 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",
-    "prettier-plugin-svelte": "^0.7.0",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.2.3",
-    "lint-staged": "^10.0.8"
+    "jest": "^25.1.0",
+    "lerna": "^3.20.2",
+    "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1",
+    "prettier-plugin-svelte": "^0.7.0",
+    "semantic-release": "^17.1.2",
+    "semantic-release-monorepo": "^7.0.3",
+    "semantic-release-monorepo-hooks": "^2.9.6",
+    "semantic-release-plugin-decorators": "^3.0.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
     "@types/busboy": "^0.2.3"

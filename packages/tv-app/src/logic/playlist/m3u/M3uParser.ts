@@ -1,6 +1,6 @@
 import readline from 'readline';
-import { Channel, ChannelOptions } from '../Channel';
 import _ from 'lodash';
+import { Channel, ChannelOptions } from "tv-common";
 
 export class M3uParser {
 	public parse(input: NodeJS.ReadableStream): Promise<Channel[]> {

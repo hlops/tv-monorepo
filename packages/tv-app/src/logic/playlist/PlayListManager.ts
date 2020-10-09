@@ -1,16 +1,14 @@
-import keyFileStorage from "key-file-storage";
 import { KeyFileStorage } from "key-file-storage/dist/src/key-file-storage";
 import _ from "lodash";
+import { Channel } from "tv-common/src";
 import { QueryParams } from "../common/QueryParams";
-import { Channel, ChannelHelper } from "./Channel";
+import { ChannelHelper } from "./Channel";
 import { M3uParser } from "./m3u/M3uParser";
 
 const STORAGE_PREFIX = "channels/";
 
 export class PlayListManager {
-  constructor(
-    private readonly storage: KeyFileStorage = keyFileStorage("node_data", true)
-  ) {
+  constructor(private readonly storage: KeyFileStorage) {
     this.storage[STORAGE_PREFIX];
   }
 
@@ -18,10 +16,7 @@ export class PlayListManager {
     return new M3uParser().parse(stream).then(channels => {
       return Promise.all(
         _.map(channels, channel =>
-          this.storage(
-            `${STORAGE_PREFIX}${ChannelHelper.getHash(channel.url)}`,
-            channel
-          )
+          this.storage(`${STORAGE_PREFIX}${ChannelHelper.getHash(channel.url)}`, channel)
         )
       ).then();
     });
@@ -33,14 +28,10 @@ export class PlayListManager {
       .then(ids =>
         Promise.all(
           _.map(ids, id =>
-            this.storage(id).then(channel =>
-              ChannelHelper.find(channel, params.query)
-            )
+            this.storage(id).then(channel => ChannelHelper.find(channel, params.query))
           )
         )
       )
-      .then(channels =>
-        _.compact(channels || []).slice(first, first + params.pageSize)
-      );
+      .then(channels => _.compact(channels || []).slice(first, first + params.pageSize));
   }
 }

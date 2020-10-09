@@ -3,7 +3,7 @@
   import Channels from "./ui/channles/Channels.svelte";
   import TvGuides from "./ui/tvGuides/TvGuides.svelte";
 
-  const tabs = ["actions", "channels", "guides"];
+  const tabs = ["actions", "channels", "guides", "upload"];
   let currentTab = tabs[1];
 
   function selectTab(tab) {
@@ -36,19 +36,18 @@
 <div class="container mx-auto px-4 max-w-screen-lg">
   <ul class="flex justify-between">
     {#each tabs as tab}
-      <li class="tab-header"
-          class:active={tab === currentTab}
-          class:inactive={tab !== currentTab}
-          on:click={() => selectTab(tab)}>
+      <li
+        class="tab-header"
+        class:active={tab === currentTab}
+        class:inactive={tab !== currentTab}
+        on:click={() => selectTab(tab)}>
         {tab}
       </li>
     {/each}
   </ul>
   <div>
     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-      {#if currentTab === 'actions'}
-        // to be implemented
-      {/if}
+      {#if currentTab === 'actions'}// to be implemented{/if}
       {#if currentTab === 'channels'}
         <Channels />
       {/if}

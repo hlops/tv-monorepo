@@ -1,0 +1,20 @@
+{
+  "name": "tv-common",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/index.ts",
+    "prod": "tsc && node ./dist/index.js",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "tslib": "^1.11.1"
+  }
+}

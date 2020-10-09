@@ -1,7 +1,6 @@
 <script>
   export { channels, selected };
 
-  import ChannelListFilter from "./ChannelListFilter.svelte";
   import * as _ from "lodash-es";
 
   let channels = {},

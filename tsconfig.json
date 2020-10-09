@@ -4,6 +4,7 @@
   "compilerOptions": {
     "baseUrl": "./packages",
     "paths": {
+      "@tv-monorepo/tv-common": ["tv-common/src"],
       "@tv-monorepo/tv-web-app": ["tv-web-app/src"],
       "@tv-monorepo/tv-app": ["tv-app/src"],
       "@tv-monorepo/*": ["*/src"]

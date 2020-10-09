@@ -1,4 +1,4 @@
 node_modules/
-public/build/
 *-debug.log
 packages/*/lib
+packages/*/node-modules

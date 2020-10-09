@@ -23,7 +23,7 @@
 </script>
 
 <div class="vertical-flex-container">
-  <select id="tvGuideList" on:selected={change}>
+  <select size="10" id="tvGuideList" on:selected={change} class="h-full">
     {#each tvGuides as giude}
       <option>{giude}</option>
     {/each}
